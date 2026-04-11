@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#93000a",
+                    "inverse-on-surface": "#f3f2db",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed": "#271900",
+                    "tertiary-container": "#573c00",
+                    "secondary": "#b5270e",
+                    "on-surface-variant": "#424842",
+                    "surface-bright": "#fcfae4",
+                    "surface-variant": "#e5e4ce",
+                    "on-secondary-fixed-variant": "#8e1300",
+                    "background": "#fcfae4",
+                    "on-background": "#1c1c0f",
+                    "on-tertiary-fixed-variant": "#5f4100",
+                    "tertiary": "#3b2700",
+                    "primary-container": "#2d4733",
+                    "primary-fixed": "#cceacf",
+                    "secondary-container": "#ff5c3e",
+                    "secondary-fixed-dim": "#ffb4a5",
+                    "on-primary-container": "#97b59b",
+                    "on-primary-fixed": "#06200f",
+                    "surface-container-highest": "#e5e4ce",
+                    "tertiary-fixed": "#ffdea9",
+                    "on-secondary-fixed": "#3e0400",
+                    "secondary-fixed": "#ffdad3",
+                    "on-primary": "#ffffff",
+                    "surface-dim": "#dcdbc5",
+                    "surface": "#fcfae4",
+                    "on-primary-fixed-variant": "#324d38",
+                    "outline": "#737972",
+                    "on-surface": "#1c1c0f",
+                    "error": "#ba1a1a",
+                    "primary-fixed-dim": "#b0ceb3",
+                    "on-error": "#ffffff",
+                    "on-tertiary-container": "#d9a43f",
+                    "inverse-surface": "#313123",
+                    "tertiary-fixed-dim": "#f5bd55",
+                    "surface-container": "#f0efd9",
+                    "inverse-primary": "#b0ceb3",
+                    "outline-variant": "#c2c8c0",
+                    "on-secondary-container": "#5d0900",
+                    "surface-container-high": "#ebe9d3",
+                    "primary": "#17301e",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-tint": "#4a654f",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "surface-container-low": "#f6f5de"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "2xl": "1.5rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #FCFAE4; color: #1C1C0F; }
+        .font-serif { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .artisanal-underline { position: relative; }
+        .artisanal-underline::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 100%; height: 2px; background-color: #F5BD55; }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-[#FCFAE4]/80 backdrop-blur-xl transition-all duration-300">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-4">
+<img alt="Sierra Morena Logo" class="h-12 w-auto" data-alt="elegant minimalist brand logo for Sierra Morena coffee featuring a stylized mountain peak and serif typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFU-eaKuLNam_td7tJl1yMpY39m0hH_iGZpebFHj3TCCq3XpjPR9C94NQxHgZ6ePEumd3Y_VImWVQ174w_-4X-2n0RBrb62aSFa0epS6A2-Tx4dlP43qoAGAoWX5yleCx8qy55PH45La9YPH4s77TlvMMS6i291bdR_S8yfsi-J7BwPZhlypFCYIhdUWADdvLreWgA6RcHnR9OcYENi0-PvTzLlk7yqqH56dBEppgMBshjwYg6SOG2132aofB7vUs2g8FBDVtJIVU"/>
+<span class="text-2xl font-serif italic text-[#17301E]">Sierra Morena</span>
+</div>
+<div class="hidden md:flex gap-10">
+<a class="text-[#17301E] font-bold border-b-2 border-[#F5BD55] pb-1 font-['Noto_Serif'] tracking-tight" href="#">Heritage</a>
+<a class="text-[#17301E]/70 hover:text-[#17301E] transition-colors font-['Noto_Serif'] tracking-tight" href="#">Roasts</a>
+<a class="text-[#17301E]/70 hover:text-[#17301E] transition-colors font-['Noto_Serif'] tracking-tight" href="#">Gifts</a>
+<a class="text-[#17301E]/70 hover:text-[#17301E] transition-colors font-['Noto_Serif'] tracking-tight" href="#">Our Story</a>
+</div>
+<button class="bg-[#b5270e] text-white px-8 py-3 rounded-xl font-bold hover:scale-105 transition-transform">Shop Now</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-screen flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="breathtaking landscape of a lush coffee plantation in Risaralda Colombia during misty morning sunrise with soft sunlight filtering through leaves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-l1Lrwn78enXNR5ejyok8Nw2Km44GvACMq2w9_xzpbQuqbEZPkO6XwbmZtFZY9S5fDrN6utPC2xXRuzcJwgOxJ-2QmDxCKisnbcOEt-LWklXF6DBLXBhzjSk5qYz70C9B60V0NA-37tMTMcS6F25ZxNPsQD9CPsWL0fagLiFNk6iBxo10TxWP-oECwaxa_BT8YMtLyUltNXuItn_9981Qgu30uRYc58DTvkPNp-uOpLFB6GpHC6NnOMefFuAxtwSayJkZqJivMgQ"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#17301E]/90 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-screen-2xl mx-auto px-8 w-full grid grid-cols-1 md:grid-cols-2">
+<div class="flex flex-col gap-8 max-w-2xl">
+<span class="text-tertiary-fixed-dim font-label tracking-[0.3em] uppercase text-sm">Archivando Herencia</span>
+<h1 class="text-white font-serif text-5xl md:text-7xl leading-tight">Café de origen con historia real</h1>
+<p class="text-[#FCFAE4]/80 text-xl leading-relaxed">Desde la finca de Don Wilmar en Risaralda Caldas, vive el aroma único de un verdadero café de especialidad.</p>
+<div class="flex flex-wrap gap-6 pt-4">
+<button class="bg-[#b5270e] text-on-primary px-10 py-5 rounded-xl font-bold text-lg hover:bg-[#8e1300] transition-colors shadow-xl">Comprar ahora</button>
+<button class="text-white flex items-center gap-2 group font-semibold">
+                        Descubrir el origen
+                        <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- Propuesta de Valor (Sección 1) -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-5xl mx-auto text-center">
+<h2 class="text-primary font-serif text-4xl mb-12">El Legado de Don Wilmar Zuleta</h2>
+<p class="text-lg text-primary/70 leading-[2] max-w-3xl mx-auto font-light">
+                Cada grano de Sierra Morena es el resultado de décadas de sabiduría. En las montañas de Risaralda, Don Wilmar Zuleta cultiva no solo café, sino una conexión profunda con la tierra. Al elegirnos, no solo adquieres un producto premium; te conviertes en parte de una historia de preservación, esfuerzo y pasión artesanal.
+            </p>
+</div>
+</section>
+<!-- Diferenciadores (Sección 2) -->
+<section class="pb-32 px-8">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-8">
+<div class="bg-surface-container-low p-8 rounded-2xl text-center group hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4 block" data-icon="explore">explore</span>
+<h4 class="font-serif text-lg text-primary">Origen real</h4>
+</div>
+<div class="bg-surface-container-low p-8 rounded-2xl text-center group hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4 block" data-icon="pan_tool">pan_tool</span>
+<h4 class="font-serif text-lg text-primary">Manos reales</h4>
+</div>
+<div class="bg-surface-container-low p-8 rounded-2xl text-center group hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4 block" data-icon="local_cafe">local_cafe</span>
+<h4 class="font-serif text-lg text-primary">Sabor auténtico</h4>
+</div>
+<div class="bg-surface-container-low p-8 rounded-2xl text-center group hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4 block" data-icon="qr_code_2">qr_code_2</span>
+<h4 class="font-serif text-lg text-primary">Trazabilidad</h4>
+</div>
+<div class="bg-surface-container-low p-8 rounded-2xl text-center group hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4 block" data-icon="featured_seasonal_and_gifts">featured_seasonal_and_gifts</span>
+<h4 class="font-serif text-lg text-primary">Ideal para regalo</h4>
+</div>
+</div>
+</section>
+<!-- Conexión Emocional (Sección 3) -->
+<section class="bg-primary text-white overflow-hidden">
+<div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row items-center">
+<div class="w-full md:w-1/2 h-[600px]">
+<img class="w-full h-full object-cover grayscale-[30%] hover:grayscale-0 transition-all duration-700" data-alt="lifestyle portrait of a young woman enjoying a steaming cup of coffee in a sun-drenched rustic kitchen with warm atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlixVsQhjkKssJtnwbbGjsqr9iztq16mkWr0pNpCMOYArZ82n_W0NhakMka863t20ZmGJRcdXdPvEeY_4GnVkTxMjduCf0Rot1el2cWpjurMeFaLB_bP5PaKjfwxyZnuxb-AOITvloFMFuvT9R_hk6gyt6P-TZ4Y1qIQKBavO7HCgJ5dI4AWwWhtfuU8ti9dRRyue-3jhsnQLYLvedObhzJu-_h9G6cqhfrDB85xlcL0IViyiAEYCVCaRiI1UEjUIp4xy8-ooEYCQ"/>
+</div>
+<div class="w-full md:w-1/2 p-16 md:p-24 flex flex-col gap-8">
+<h2 class="font-serif text-4xl md:text-5xl italic leading-tight">"Si te gusta elegir productos con propósito... este café es para ti."</h2>
+<div class="h-px bg-on-primary-container w-24"></div>
+<p class="text-lg text-white/70 leading-relaxed">Laura, como tú, sabe que el verdadero lujo no está en la etiqueta, sino en la transparencia del proceso y el respeto por quien trabaja la tierra.</p>
+<button class="artisanal-underline self-start text-tertiary-fixed-dim uppercase tracking-widest font-bold">Unirse a la comunidad</button>
+</div>
+</div>
+</section>
+<!-- Historia (Sección 4) -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="order-2 md:order-1">
+<span class="text-secondary font-bold uppercase tracking-widest text-sm block mb-4">1.850 metros sobre el cielo</span>
+<h3 class="text-primary font-serif text-4xl mb-8 leading-tight">Donde el aire es más puro, el café es más dulce.</h3>
+<p class="text-primary/70 text-lg mb-6 leading-relaxed">A 1.850 msnm, en el corazón de Risaralda, las condiciones climáticas exigen paciencia. Aquí, los granos maduran lentamente, concentrando azúcares y notas que solo la altitud extrema puede otorgar.</p>
+<p class="text-primary/70 text-lg mb-6 leading-relaxed">Don Wilmar supervisa cada árbol, cada recolección, asegurando que solo el corazón de la cosecha llegue a tu taza.</p>
+</div>
+<div class="order-1 md:order-2">
+<div class="relative">
+<div class="absolute -top-6 -left-6 w-full h-full border border-outline-variant rounded-2xl z-0"></div>
+<img class="relative z-10 rounded-2xl shadow-2xl" data-alt="close up of sun-ripened red coffee cherries on a branch in a high altitude Colombian farm with soft bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQfkrinYBrGJ3s9JIhCdj_4hLeWk1aDXjgISrXBS-_8FVNljgoW1_59la1MJqYAT1ZeG1Sp_QQsbLEx9kl-6ASn4wJUtaKrmdRlpPZ_Ck1h9d4qham_nogmskyrC1spExs4AkntvsG-rruaKUwui7POIKtkrhGcy70ksyjdv56JMHEoJkmlYcHMjoIP0yyYjC51dU48tptuQ2MKLnwXsUtt83A7QxlA4de4PRFWvK8AmaGj7DkdscSerpBrZ_O7x5rPS23xLf4Z6w"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Producto (Sección 5) -->
+<section class="py-32 px-8 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="flex justify-center">
+<img class="max-h-[600px] w-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500" data-alt="premium coffee packaging for Sierra Morena featuring elegant minimalist design and artisanal textures against a soft neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBn5lO489G7ZHXyS3wqOXscwmgK-iae9hB_KBVqJS4PomEFfHhRud9WPTzjoWYS6-kamzgs8qiNWirstt6m7CUVTZYeGzLGY_bum92YPwdDOAhQ1zLCQBG5P8TRa6Db0hFTKih-QrXNhSAt558sdHtZRUOzmDZIexihc3tof5-e0DzHThV_CmTXva-VhQwZs8im4ORvOGq9ZQIM8Y4gdLq6bXVT9xqNGc8yYJTI6sxw4zmGFDGM96kj9ICbhESm0Z_3New63_mEmZU"/>
+</div>
+<div class="bg-white p-12 rounded-2xl shadow-sm border border-surface-variant/30">
+<h2 class="font-serif text-primary text-4xl mb-2">Edición Limitada Risaralda</h2>
+<p class="text-secondary font-bold mb-8 italic">Puntuación SCA: 83</p>
+<div class="grid grid-cols-2 gap-y-8 gap-x-12">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-primary/50 mb-1">Origen</p>
+<p class="font-bold text-primary">Risaralda, Caldas</p>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-widest text-primary/50 mb-1">Notas</p>
+<p class="font-bold text-primary">Afrutado, Cítrico</p>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-widest text-primary/50 mb-1">Proceso</p>
+<p class="font-bold text-primary">Lavado Tradicional</p>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-widest text-primary/50 mb-1">Altura</p>
+<p class="font-bold text-primary">1.850 msnm</p>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-widest text-primary/50 mb-1">Tostión</p>
+<p class="font-bold text-primary">Media</p>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-widest text-primary/50 mb-1">Variedad</p>
+<p class="font-bold text-primary">Castillo Naranjal</p>
+</div>
+</div>
+<button class="w-full mt-12 bg-primary text-white py-5 rounded-xl font-bold text-xl flex items-center justify-center gap-3 hover:bg-primary-container transition-all">
+                    Añadir al carrito
+                    <span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Testimonios (Sección 6) -->
+<section class="py-32 px-8">
+<div class="max-w-screen-2xl mx-auto">
+<h2 class="text-primary font-serif text-4xl mb-20 text-center italic">Lo que dicen nuestros catadores en casa</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="bg-surface p-10 rounded-2xl flex flex-col gap-6 border-b-4 border-tertiary-fixed-dim shadow-sm">
+<div class="flex text-tertiary-fixed-dim">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-primary italic leading-relaxed">"El aroma que desprende al molerlo te transporta directamente a la montaña. Se nota la frescura y el cuidado en el tostado. Sin duda, mi café favorito ahora."</p>
+<p class="font-bold uppercase tracking-widest text-xs">— Carlos M.</p>
+</div>
+<div class="bg-surface p-10 rounded-2xl flex flex-col gap-6 border-b-4 border-tertiary-fixed-dim shadow-sm">
+<div class="flex text-tertiary-fixed-dim">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-primary italic leading-relaxed">"Me encanta que sea un café con nombre y apellido. Saber que viene de la finca de Don Wilmar lo hace mucho más especial para mis mañanas."</p>
+<p class="font-bold uppercase tracking-widest text-xs">— Elena R.</p>
+</div>
+<div class="bg-surface p-10 rounded-2xl flex flex-col gap-6 border-b-4 border-tertiary-fixed-dim shadow-sm">
+<div class="flex text-tertiary-fixed-dim">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-primary italic leading-relaxed">"Perfecto para regalar. El empaque es hermoso y la historia que viene detrás le da un valor increíble a los regalos corporativos que enviamos."</p>
+<p class="font-bold uppercase tracking-widest text-xs">— Studio Creativo G.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Regalos (Sección 7) -->
+<section class="py-24 px-8 bg-[#17301E]">
+<div class="max-w-screen-xl mx-auto rounded-3xl overflow-hidden bg-[#2D4733] flex flex-col md:flex-row items-center">
+<div class="p-16 flex flex-col gap-6 md:w-1/2">
+<h2 class="text-white font-serif text-4xl">Regala algo con historia</h2>
+<p class="text-[#FCFAE4]/70 leading-relaxed text-lg">Personaliza tus detalles con el sello de Sierra Morena. Ideal para quienes valoran lo auténtico y lo hecho a mano.</p>
+<button class="bg-[#F5BD55] text-[#17301E] px-8 py-4 rounded-xl font-bold self-start hover:bg-white transition-colors">Ver opciones de regalo</button>
+</div>
+<div class="md:w-1/2 h-[400px]">
+<img class="w-full h-full object-cover opacity-80" data-alt="overhead shot of a beautifully curated gift box containing bags of Sierra Morena coffee and artisanal wooden accessories" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVRR4BYv8rDB6ZCHGZUWim2LZhe70gKC9j1ZeZKVilN3ArY5myXJ-RZg3pZIKCzEe25jYfXffMJiQV_3lgjTdGk6TipM-NunoB5zA7vMNEYCa76wBzzsskQxtXX58M_EfCcXQhGukFTTjvuFECPoSrvLaUWXiONiUx5O5sJzG7vadz6uXfnjNc3HWzCLz9CHbjt0it_81MuVre9li20odJaeC_a8xy9rlqext3ShQHFLMa_vR0k7Dyjus57n0UyMtfuP3rU77qhek"/>
+</div>
+</div>
+</section>
+<!-- Formulario (Sección 8) -->
+<section class="py-32 px-8 bg-surface-container">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="text-primary font-serif text-4xl mb-4">Obtén 10% de descuento</h2>
+<p class="text-primary/70 mb-12">Suscríbete a nuestra gaceta cafetera y recibe un beneficio especial en tu primera compra.</p>
+<form class="flex flex-col gap-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<input class="bg-transparent border-b-2 border-surface-variant focus:border-primary border-t-0 border-x-0 p-4 focus:ring-0 text-primary transition-all" placeholder="Nombre completo" type="text"/>
+<input class="bg-transparent border-b-2 border-surface-variant focus:border-primary border-t-0 border-x-0 p-4 focus:ring-0 text-primary transition-all" placeholder="Correo electrónico" type="email"/>
+</div>
+<input class="bg-transparent border-b-2 border-surface-variant focus:border-primary border-t-0 border-x-0 p-4 focus:ring-0 text-primary transition-all" placeholder="Celular" type="tel"/>
+<button class="bg-secondary text-white py-5 rounded-xl font-bold text-xl mt-6 hover:scale-[1.02] transition-transform">Quiero mi descuento</button>
+</form>
+</div>
+</section>
+<!-- CTA Final (Sección 9) -->
+<section class="py-32 bg-primary relative overflow-hidden text-center px-8">
+<div class="relative z-10 max-w-4xl mx-auto">
+<h2 class="text-white font-serif text-5xl md:text-6xl mb-10 leading-tight">Descubre el verdadero sabor de la herencia</h2>
+<p class="text-on-primary-container text-xl mb-12">Un café que honra a quien lo siembra y a quien lo disfruta.</p>
+<button class="bg-white text-primary px-12 py-6 rounded-xl font-black text-2xl hover:bg-secondary hover:text-white transition-all">EMPEZAR MI EXPERIENCIA</button>
+</div>
+</section>
+<!-- Footer Shell -->
+<footer class="bg-[#17301E] w-full pt-24 pb-12 flex flex-col items-center text-center px-6">
+<div class="mb-12">
+<span class="text-xl font-serif text-[#FCFAE4] mb-4 block">Sierra Morena Coffee</span>
+<div class="flex gap-8 justify-center mb-8">
+<a class="text-[#FCFAE4]/60 hover:text-[#FCFAE4] font-['Manrope'] uppercase tracking-[0.2em] text-[10px] transition-colors" href="#">Sustainability Report</a>
+<a class="text-[#FCFAE4]/60 hover:text-[#FCFAE4] font-['Manrope'] uppercase tracking-[0.2em] text-[10px] transition-colors" href="#">Shipping Policy</a>
+<a class="text-[#FCFAE4]/60 hover:text-[#FCFAE4] font-['Manrope'] uppercase tracking-[0.2em] text-[10px] transition-colors" href="#">Artisan Partners</a>
+<a class="text-[#FCFAE4]/60 hover:text-[#FCFAE4] font-['Manrope'] uppercase tracking-[0.2em] text-[10px] transition-colors" href="#">Contact</a>
+</div>
+</div>
+<p class="text-[#FCFAE4]/40 font-['Manrope'] uppercase tracking-[0.2em] text-[10px]">© 2024 Sierra Morena Coffee. Archiving Heritage through Every Bean.</p>
+</footer>
+</body></html>
